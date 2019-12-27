@@ -61,6 +61,6 @@ public class GroceryList
 
     public int findItem(String searchItem)
     {
-        return groceryList.indexOf(searchItem);     // 0/1 = found | -1 = not found
+        return groceryList.indexOf(searchItem);     // -1 = not found
     }
 }

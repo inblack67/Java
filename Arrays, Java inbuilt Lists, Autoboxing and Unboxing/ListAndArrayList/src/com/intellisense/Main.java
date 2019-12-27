@@ -53,11 +53,10 @@ public class Main {
 
     public static void processArrayList(GroceryList groceryList)
     {
-        ArrayList<String> newArrayList = new ArrayList<String>(groceryList.getGroceryList());
-//        newArrayList.addAll(groceryList.getGroceryList());
+        //        newArrayList.addAll(groceryList.getGroceryList());
 
         String[] myArray = new String[groceryList.getGroceryList().size()];
-        myArray = groceryList.getGroceryList().toArray(myArray);
+        groceryList.getGroceryList().toArray(myArray);
     }
 
 }
