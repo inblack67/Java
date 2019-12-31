@@ -1,6 +1,5 @@
 package com.intellisense;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
@@ -60,9 +59,16 @@ public class Demo {
     {
         ListIterator<String> stringListIterator = linkedList.listIterator();
 
+        // While is used to meet the conditions and checking if..
         while (stringListIterator.hasNext())
         {
             int comparison = stringListIterator.next().compareTo(newCity);
+//            The Java String compareTo() method is used for comparing two strings lexicographically.
+//            f both the strings are equal then this method returns 0
+//            else it returns positive or negative value.
+//            The result is positive if the first string is
+//            lexicographically greater than the second string else the result
+//            would be negative.
 
             if(comparison==0)
             {
@@ -80,6 +86,8 @@ public class Demo {
                 // already moved to next in int comparison......
             }
         }
+
+        // Regular shit is done here
         stringListIterator.add(newCity);
         return true;
     }
